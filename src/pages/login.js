@@ -14,12 +14,13 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="left-panel">
-        <h2>Need webdesign for your business?</h2>
+        <h2>AssetGuard is a state-of-the-art digital platform designed to empower creators, distributors, and consumers to manage digital assets securely and efficiently. 
+         </h2>
         <h1>
-          <strong>Design Spacee</strong> will help you.
+          <strong> With AssetGuard, you can assign roles, manage permissions, and ensure that your digital files are protected and distributed correctly.</strong> 
         </h1>
         <div className="logo">S</div>
-        <p>figma.com/@designspacee</p>
+        <p></p>
       </div>
       <div className="right-panel">
         <form className="login-form" onSubmit={handleLogin}>
