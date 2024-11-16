@@ -39,7 +39,7 @@ const Dashboard = () => {
               <div className="card">
                 <h3>Register</h3>
                 <p>Total Sales</p>
-                <button onClick={toggleRegisterForm} style={{ marginTop: '10px' }}>Register IP</button>
+                <button className="register-btn" onClick={toggleRegisterForm} style={{ marginTop: '10px' }}></button>
               </div>
               <div className="card">
                 <h3>Borrow</h3>

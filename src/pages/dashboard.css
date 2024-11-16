@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -163,4 +163,28 @@ body {
   background-color: #4a63cc; /* Change background color on hover */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
   transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+.register-btn {
+  padding: 10px 20px; /* Add padding for better spacing */
+  background-color: #333333; /* Set a green background */
+  color: #ffffff; /* Set the text color to white */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 14px; /* Set a suitable font size */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.register-btn:hover {
+  background-color: #333333; /* Darken the background on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.register-btn:active {
+  background-color: #333333; /* Even darker background for active state */
+  box-shadow: none; /* Remove shadow on click */
+  transform: translateY(0); /* Reset lift effect */
 }
