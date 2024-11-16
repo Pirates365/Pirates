@@ -1,34 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./dashboard.css";
+import RegisterIPForm from "./RegisterIPForm"; // Adjust the import path as necessary
 
 const Dashboard = () => {
+  const [showRegisterForm, setShowRegisterForm] = useState(false);
+
+  const toggleRegisterForm = () => {
+    setShowRegisterForm(!showRegisterForm);
+  };
+
   return (
     <div className="landing-container">
       <header className="header">
         <div className="logo">
           <img
-            src="https://via.placeholder.com/50" // Replace with your logo URL
+            src="https://via.placeholder.com/50"
             alt="Logo"
           />
         </div>
         <nav className="menu">
+          {/* Navigation Menu if needed */}
         </nav>
         <div className="profile">
           <img
-            src="https://via.placeholder.com/40" // Replace with profile icon URL
-            alt="Profile"
+            src="https://via.placeholder.com/40"
+            alt="Profile Icon"
           />
         </div>
       </header>
       <main className="content">
-        <h1>Hello Umer!</h1>
+        <h1>Welcome, User!</h1>
         <div className="dashboard-container">
           {/* Left Panel - Actions */}
           <section className="actions">
             <h2>Actions</h2>
             <p>Digital Assets</p>
             <div className="cards">
-              <div className="card">
+              <div className="card" onClick={toggleRegisterForm}>
                 <h3>Register</h3>
                 <p>Total Sales</p>
               </div>
@@ -45,7 +53,7 @@ const Dashboard = () => {
               <h2>Manage all your IPs with ease</h2>
               <div className="ip-content">
                 <img
-                  src="https://via.placeholder.com/100" // Replace with IP globe image URL
+                  src="https://via.placeholder.com/100"
                   alt="IP Management"
                   className="ip-image"
                 />
@@ -97,6 +105,7 @@ const Dashboard = () => {
           </section>
         </div>
       </main>
+      {showRegisterForm && <RegisterIPForm />}
     </div>
   );
 };

@@ -1,0 +1,67 @@
+.register-ip-form {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-ip-form form {
+  width: 40%;
+}
+
+.register-ip-form form h2 {
+  margin-bottom: 1rem;
+}
+
+.register-ip-form label {
+  display: block;
+  margin: 8px 0;
+}
+
+.register-ip-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-ip-form button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-ip-form button:hover {
+  background-color: #0056b3;
+}
+
+.file-upload-area {
+  border: 1px dashed gray;
+  width: 55%;
+  padding: 1rem;
+  text-align: center;
+  color: gray;
+}
+
+.file-upload-area p {
+  margin: 10px 0;
+}
+
+.file-upload-area button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.file-upload-area button:hover {
+  background-color: #218838;
+}
