@@ -58,22 +58,15 @@ body {
 }
 
 .actions,
-.action {
-  background-color: #5B86E5;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  flex: 1;
-}
-.actions,
 .ip-registered {
-  background-color: #5B86E5;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   flex: 1;
 }
 .actions {
+  background-color: #5B86E5;
   margin-right: 20px;
 }
 
@@ -86,15 +79,17 @@ body {
 .cards {
   display: flex;
   justify-content: space-between;
+  gap: 20px; /* Space between the cards */
+  margin-bottom: 30px; /* Space between the row of cards and the next section */
 }
-
 .card {
   background-color: #333333;
   color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  width: 30%;
+  width: calc(33.33% - 20px); /* Ensure even spacing with gap */
   text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .ip-management {
@@ -150,4 +145,22 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 5px;
+}
+.learn-more-btn {
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  background-color: #6279ff; /* Set a background color */
+  color: #ffffff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set font size */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Add smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.learn-more-btn:hover {
+  background-color: #4a63cc; /* Change background color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  transform: translateY(-2px); /* Slightly lift the button on hover */
 }
