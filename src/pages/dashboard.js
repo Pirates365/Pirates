@@ -49,7 +49,7 @@ const Dashboard = () => {
                 <p>Product Sold</p>
               </div>
             </div>
-            <section className="ip-management">
+            <section className="ip-registered">
               <h2>Manage all your IPs with ease</h2>
               <div className="ip-content">
                 <img
@@ -57,8 +57,8 @@ const Dashboard = () => {
                   alt="IP Management"
                   className="ip-image"
                 />
-                <button className="learn-more-btn">Learn More</button>
               </div>
+              <button className="learn-more-btn">Learn More</button>
             </section>
           </section>
 
