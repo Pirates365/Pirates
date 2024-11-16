@@ -36,9 +36,10 @@ const Dashboard = () => {
             <h2>Actions</h2>
             <p>Digital Assets</p>
             <div className="cards">
-              <div className="card" onClick={toggleRegisterForm}>
+              <div className="card">
                 <h3>Register</h3>
                 <p>Total Sales</p>
+                <button onClick={toggleRegisterForm} style={{ marginTop: '10px' }}>Register IP</button>
               </div>
               <div className="card">
                 <h3>Borrow</h3>
@@ -49,7 +50,7 @@ const Dashboard = () => {
                 <p>Product Sold</p>
               </div>
             </div>
-            <section className="ip-registered">
+            <section className="ip-management">
               <h2>Manage all your IPs with ease</h2>
               <div className="ip-content">
                 <img
@@ -57,8 +58,8 @@ const Dashboard = () => {
                   alt="IP Management"
                   className="ip-image"
                 />
+                <button className="learn-more-btn">Learn More</button>
               </div>
-              <button className="learn-more-btn">Learn More</button>
             </section>
           </section>
 
